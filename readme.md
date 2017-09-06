@@ -5,7 +5,7 @@ Author: Arno0x0x - [@Arno0x0x](http://twitter.com/Arno0x0x)
 
 What this tool does is taking an XLL file (*MS-Excel add-in, basically a DLL with a specific exported function*), encrypt it with a simple RC4 encryption stub, and embed it into an HTML file.
 
-When the user browses to the HTML file, the embeded XLL file is decrypted on the fly, saved in a local temporary folder, and the file is presented to the user as if it was being downloaded from the remote site along with a nice Excel icon. Depending on the browser used, the XLL file can be automatically opened within Excel.
+When the user browses to the HTML file, the embeded XLL file is decrypted on the fly, saved in a temporary folder, and the file is then presented to the user as if it was being downloaded from the remote site along with a nice Excel icon. Depending on the browser used, the XLL file can be automatically opened within Excel.
 
 Side notes:
 - This tool was inspired and is derived from the great 'demiguise' tool : [https://github.com/nccgroup/demiguise](https://github.com/nccgroup/demiguise)
@@ -17,7 +17,6 @@ Side notes:
 
 - In the HTML template (*html.tpl file*) it is advisable to insert your own key environmental derivation function below in place
 of the 'keyFunction'. You should derive your key from the environment so that it only works on your intended target (*and not in a sandbox*).
-See virginkey.js for an example.
 
 Usage
 ----------------------

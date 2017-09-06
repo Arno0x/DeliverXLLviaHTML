@@ -17,7 +17,6 @@
 # 5) In the HTML template (html.tpl file) it is advisable to insert your own key environmental derivation function below in place
 #	 of the 'keyFunction'.
 #	 You should derive your key from the environment so that it only works on your intended target (and not in a sandbox).
-#	 See virginkey.js for an example.
 
 import os
 import base64
