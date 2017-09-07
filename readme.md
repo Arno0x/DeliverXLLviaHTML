@@ -10,12 +10,12 @@ When the user browses to the HTML file, the embeded XLL file is decrypted on the
 Side notes:
 - This tool was inspired and is derived from the great 'demiguise' tool : [https://github.com/nccgroup/demiguise](https://github.com/nccgroup/demiguise)
 
-- The b64AndRC4 function used on the binary input (from the XLL file) is a mix Mix of:
+- The b64AndRC4 function used on the binary input (from the XLL file) is a mix of:
 [https://gist.github.com/borismus/1032746](https://gist.github.com/borismus/1032746) and [https://gist.github.com/farhadi/2185197](https://gist.github.com/farhadi/2185197)
 
 - Check [https://gist.github.com/Arno0x/f71a9db515ddea686ccdd77666bebbaa](https://gist.github.com/Arno0x/f71a9db515ddea686ccdd77666bebbaa) for an easy malicious XLL creation
 
-- In the HTML template (*html.tpl file*) it is advisable to insert your own key environmental derivation function below in place
+- In the HTML template (*html.tpl file*) it is advised to insert your own key environmental derivation function below in place
 of the 'keyFunction'. You should derive your key from the environment so that it only works on your intended target (*and not in a sandbox*).
 
 Usage
